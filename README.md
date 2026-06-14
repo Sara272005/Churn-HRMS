@@ -2,112 +2,85 @@
 
 # 🚀 Employee Churn Prediction & Retention System
 
-### Intelligent Workforce Analytics Platform for Predicting Employee Attrition and Improving Retention
+### Intelligent Workforce Analytics Platform for Predicting Employee Attrition and Improving Employee Retention
 
 <p align="center">
-A full-stack enterprise application that helps organizations identify employees at risk of leaving, analyze workforce trends, and implement proactive retention strategies through data-driven insights.
+A modern full-stack HR analytics solution that helps organizations identify employees at risk of leaving, monitor workforce health, and implement proactive retention strategies through data-driven insights.
 </p>
+
+### 🌐 Live Application
+
+**🔗 Website:** https://hr-retention-1.preview.emergentagent.com/?utm_source=share
 
 </div>
 
 ---
 
-# 📌 Table of Contents
-
-- Overview
-- Problem Statement
-- Project Objectives
-- Key Features
-- System Workflow
-- Churn Prediction Methodology
-- System Architecture
-- Technology Stack
-- Database Design
-- Dashboard Analytics
-- Security Features
-- Installation & Setup
-- Project Structure
-- Future Enhancements
-- Learning Outcomes
-- Author
-
----
-
 # 📖 Overview
 
-Employee attrition is one of the most significant challenges faced by organizations worldwide. Losing valuable employees affects productivity, increases recruitment costs, delays project delivery, and results in the loss of organizational knowledge.
+Employee attrition is one of the most significant challenges faced by organizations today. Losing skilled employees not only increases recruitment and training costs but also impacts productivity, project continuity, and organizational growth.
 
-The Employee Churn Prediction & Retention System is designed to help Human Resource departments proactively identify employees who may be at risk of leaving the organization. The system continuously monitors employee attendance, leave records, performance reviews, overtime workload, and satisfaction survey responses to calculate a churn risk score.
+The **Employee Churn Prediction & Retention System** is designed to assist Human Resource departments in identifying employees who may be at risk of leaving the organization. By analyzing attendance patterns, leave records, performance evaluations, overtime workload, and employee satisfaction levels, the system generates a churn risk score and provides actionable retention recommendations.
 
-Based on the calculated risk level, the platform generates personalized retention recommendations that enable HR teams to take preventive action before attrition occurs.
-
-This project combines enterprise software development principles with HR analytics to create a practical workforce management solution.
+The platform enables organizations to move from reactive employee management to proactive workforce retention by offering real-time analytics, predictive insights, and decision-support tools.
 
 ---
 
 # 🎯 Problem Statement
 
-Organizations invest considerable resources in hiring, training, and developing employees. However, employee resignations often occur unexpectedly, creating several challenges:
+Organizations invest substantial resources in recruiting, training, and developing employees. However, unexpected employee turnover can lead to:
 
-- Increased recruitment and onboarding costs
-- Reduced productivity and team performance
-- Loss of experienced employees and domain knowledge
-- Delayed project completion
-- Increased workload for remaining employees
-- Difficulty in workforce planning
+- Increased recruitment and onboarding expenses
+- Reduced organizational productivity
+- Delayed project delivery
+- Loss of valuable knowledge and expertise
+- Higher workload for existing employees
+- Challenges in workforce planning
 
-Most traditional HR systems focus on record management but do not provide predictive insights regarding employee turnover.
+Traditional HR systems primarily focus on employee record management and often lack predictive capabilities. As a result, HR departments are unable to identify potential attrition risks before employees decide to leave.
 
-There is a need for an intelligent system capable of identifying employees who are likely to leave and helping organizations improve employee retention through proactive interventions.
+This project addresses that challenge by providing an intelligent system capable of predicting employee churn and recommending appropriate retention strategies.
 
 ---
 
 # 🎯 Project Objectives
 
-The primary objectives of this project are:
+The primary objectives of this system are:
 
-### Employee Attrition Prediction
-Analyze employee-related data and identify employees at risk of leaving the organization.
-
-### Workforce Retention
-Provide actionable recommendations that help improve employee satisfaction and retention.
-
-### HR Decision Support
-Assist HR professionals in making informed decisions through analytics and reporting.
-
-### Workforce Monitoring
-Track attendance, leave behavior, performance ratings, and employee feedback.
-
-### Business Intelligence
-Generate visual dashboards and workforce insights for management.
+- Predict employee attrition risks before resignation occurs.
+- Improve employee retention through proactive intervention.
+- Support HR professionals with data-driven decision-making.
+- Monitor workforce engagement and satisfaction.
+- Reduce hiring and training costs associated with employee turnover.
+- Provide actionable workforce insights through analytics and reporting.
 
 ---
 
-# ✨ Key Features
+# ✨ Core Features
 
-## 🔐 Authentication & Authorization
+## 🔐 Authentication & Access Control
 
 - Secure user registration and login
 - JWT-based authentication
-- Password encryption using BCrypt
-- Role-based access control
-- Protected API endpoints
+- Password encryption and secure credential management
+- Role-based authorization
+- Protected application routes
 - Session security
 
-### Supported Roles
+### Supported User Roles
 
 #### HR Administrator
-- Manage employees
-- View analytics dashboards
+- Manage employee records
+- Access workforce analytics
 - Monitor churn predictions
-- Access retention recommendations
-- Generate reports
+- View retention recommendations
+- Analyze organizational trends
 
 #### Employee
-- View personal profile
+- Access personal profile
+- View attendance records
+- Review performance history
 - Submit satisfaction surveys
-- Access attendance history
-- View performance records
 
 ---
 
@@ -115,231 +88,229 @@ Generate visual dashboards and workforce insights for management.
 
 The Employee Management Module provides complete employee lifecycle management.
 
-### Features
+### Functionalities
 
-- Add new employees
-- Edit employee information
+- Add employee records
+- Update employee information
 - Delete employee records
 - Search employees
 - Filter employees by department
-- View employee profiles
-- Department and designation management
+- Manage employee profiles
+- Track department and designation information
 
-### Employee Information
+### Employee Information Captured
 
 - Employee ID
-- Name
-- Email
+- Full Name
+- Email Address
 - Department
 - Designation
 - Joining Date
-- Salary
-- Manager Information
+- Salary Information
+- Reporting Manager
 
 ---
 
 ## 🕒 Attendance Management
 
-Attendance records play a critical role in understanding employee engagement and work patterns.
+Attendance behavior is an important indicator of employee engagement.
 
 ### Features
 
 - Daily attendance tracking
-- Attendance history
-- Monthly attendance reports
+- Attendance history management
 - Attendance percentage calculation
-- Employee attendance analytics
+- Monthly attendance reporting
+- Workforce attendance analysis
 
 ### Benefits
 
-Attendance trends help identify employees who may be disengaged or experiencing workplace dissatisfaction.
+The system helps identify employees with declining attendance patterns, which may indicate dissatisfaction or disengagement.
 
 ---
 
 ## 📅 Leave Management
 
-The Leave Management Module tracks employee leave behavior and identifies unusual patterns.
+The Leave Management Module monitors employee leave behavior and trends.
 
 ### Features
 
-- Leave record management
-- Leave history tracking
-- Leave frequency monitoring
-- Leave trend analysis
+- Leave history management
+- Leave frequency analysis
+- Employee leave tracking
+- Leave pattern monitoring
 
 ### Benefits
 
-Frequent or unusual leave patterns can indicate reduced employee engagement and contribute to churn prediction.
+Unusual leave behavior may indicate reduced engagement or workplace concerns and can contribute to churn risk calculations.
 
 ---
 
 ## 📈 Performance Management
 
-The system stores and analyzes employee performance reviews.
+The system stores and evaluates employee performance records.
 
 ### Features
 
-- Performance ratings
-- Review history
-- Performance trend analysis
-- Employee growth tracking
+- Performance review tracking
+- Employee rating management
+- Historical performance analysis
+- Productivity monitoring
 
 ### Benefits
 
-Consistently low performance ratings may indicate dissatisfaction, burnout, or disengagement.
+Performance trends help HR teams understand employee growth, motivation, and engagement levels.
 
 ---
 
 ## 😊 Employee Satisfaction Surveys
 
-Employee feedback is one of the strongest indicators of potential attrition.
+Employee satisfaction is one of the strongest indicators of workforce stability.
 
 ### Survey Parameters
 
 - Work-Life Balance
 - Salary Satisfaction
 - Career Growth Opportunities
-- Manager Support
+- Managerial Support
 - Workplace Environment
 - Overall Job Satisfaction
 
 ### Benefits
 
-Survey responses help organizations understand employee sentiment and improve workplace conditions.
+Survey responses help organizations understand employee sentiment and improve workplace culture.
 
 ---
 
 # 🧠 Churn Prediction Engine
 
-The Churn Prediction Engine is the core component of the application.
+The Churn Prediction Engine is the core component of the platform.
 
-It evaluates employee behavior using predefined business rules and calculates a churn risk score ranging from 0 to 100.
+It analyzes multiple workforce indicators and calculates a churn risk score ranging from 0 to 100.
 
----
+### Factors Used for Prediction
 
-## Factors Used for Prediction
+#### Attendance Percentage
+Low attendance rates may indicate disengagement.
 
-### Attendance Percentage
+#### Leave Frequency
+Frequent leave requests can suggest reduced commitment.
 
-Low attendance rates may indicate disengagement and increase attrition risk.
+#### Performance Ratings
+Declining performance may indicate dissatisfaction or burnout.
 
-### Leave Frequency
+#### Overtime Hours
+Excessive workload often increases attrition risk.
 
-Employees with unusually high leave frequency may have lower organizational commitment.
-
-### Performance Ratings
-
-Poor performance can indicate lack of motivation or workplace dissatisfaction.
-
-### Overtime Hours
-
-Excessive workload often contributes to employee burnout.
-
-### Satisfaction Scores
-
-Low satisfaction scores significantly increase churn probability.
+#### Satisfaction Scores
+Low employee satisfaction significantly contributes to churn probability.
 
 ---
 
 ## Risk Classification
 
-| Score Range | Risk Level |
-|------------|------------|
+| Risk Score | Category |
+|------------|----------|
 | 0 – 40 | 🟢 Low Risk |
 | 41 – 70 | 🟡 Medium Risk |
 | 71 – 100 | 🔴 High Risk |
 
 ---
 
-## Example Risk Calculation
+## Example Scenario
 
-An employee with:
+An employee who has:
 
 - Low attendance
-- High overtime
-- Low satisfaction score
-- Poor performance rating
+- Frequent leave records
+- Poor performance ratings
+- High overtime workload
+- Low satisfaction survey scores
 
-will receive a higher churn risk score and be classified as High Risk.
+will receive a higher churn risk score and be classified as a High-Risk Employee.
 
 ---
 
-# 💡 Retention Recommendation Engine
+# 💡 Retention Recommendation System
 
-Once a risk score is generated, the system automatically suggests retention actions.
+After risk evaluation, the platform automatically generates recommendations to help HR teams improve employee retention.
 
-### Examples
+### Sample Recommendations
 
-| Identified Issue | Recommendation |
-|------------------|---------------|
+| Identified Issue | Suggested Action |
+|------------------|------------------|
 | Excessive Overtime | Reduce Workload |
 | Low Satisfaction | HR Counseling |
 | Poor Performance | Training Program |
 | Career Stagnation | Promotion Review |
-| Frequent Leave | Employee Engagement Program |
+| Frequent Leave | Employee Engagement Activities |
 
-These recommendations help HR departments take preventive measures before employee resignation occurs.
+These recommendations support proactive workforce management and help reduce employee turnover.
 
 ---
 
-# 🚨 Alerts & Notifications
+# 🚨 Alerts & Monitoring
 
 The system automatically generates alerts when:
 
-- Churn score exceeds threshold
+- Churn risk exceeds predefined thresholds
 - Attendance percentage drops significantly
-- Satisfaction scores decrease
-- Performance ratings decline
+- Satisfaction scores decline
+- Performance ratings decrease
+- Employee engagement indicators become critical
 
-This enables early intervention and proactive workforce management.
+This enables HR departments to intervene before attrition occurs.
 
 ---
 
-# 📊 Dashboard Analytics
+# 📊 Analytics Dashboard
 
-The Analytics Dashboard provides visual insights into workforce health and employee behavior.
+The Analytics Dashboard provides real-time workforce insights and visual reporting.
 
-### Dashboard Metrics
+### Key Metrics
 
 - Total Employees
 - Active Employees
 - High-Risk Employees
 - Average Satisfaction Score
 - Attendance Statistics
-- Department-Wise Distribution
+- Workforce Health Indicators
 
-### Visual Reports
+### Visual Analytics
 
 - Churn Risk Distribution
 - Attendance Trends
-- Satisfaction Trends
 - Performance Trends
-- Department Analytics
+- Satisfaction Trends
+- Department-Wise Employee Distribution
+- Workforce Insights
 
-The dashboard enables HR teams to monitor workforce conditions in real time.
+The dashboard transforms raw HR data into meaningful business intelligence.
 
 ---
 
 # 🏗️ System Architecture
 
 ```text
-                 Employee/User
-                        │
-                        ▼
-              React Frontend (UI)
-                        │
-                        ▼
-             Spring Boot REST APIs
-                        │
-                        ▼
-              Business Logic Layer
-                        │
-                        ▼
-               Churn Prediction Engine
-                        │
-                        ▼
-                  MySQL Database
+Employee/User
+      │
+      ▼
+React Frontend
+      │
+      ▼
+Spring Boot REST APIs
+      │
+      ▼
+Business Logic Layer
+      │
+      ▼
+Churn Prediction Engine
+      │
+      ▼
+MySQL Database
 ```
+
+The architecture follows a modular and scalable design that separates presentation, business logic, and data layers for improved maintainability and performance.
 
 ---
 
@@ -350,8 +321,8 @@ The dashboard enables HR teams to monitor workforce conditions in real time.
 - React.js
 - Vite
 - Material UI
-- React Router
 - Axios
+- React Router
 - Recharts
 
 ## Backend
@@ -359,15 +330,15 @@ The dashboard enables HR teams to monitor workforce conditions in real time.
 - Java 21
 - Spring Boot
 - Spring Security
-- JWT Authentication
-- Hibernate
 - Spring Data JPA
+- Hibernate
+- JWT Authentication
 
 ## Database
 
 - MySQL
 
-## Tools & Platforms
+## Development Tools
 
 - Maven
 - Docker
@@ -379,129 +350,98 @@ The dashboard enables HR teams to monitor workforce conditions in real time.
 
 # 🗄️ Database Design
 
+The application utilizes a relational database structure consisting of:
+
 ### Users
-Stores login credentials and user roles.
+Stores authentication and role information.
 
 ### Employees
-Stores employee profile information.
+Stores employee profiles and organizational details.
 
 ### Attendance
-Stores daily attendance records.
+Stores daily attendance records and work hours.
 
 ### Leave Records
-Stores employee leave history.
+Stores employee leave information.
 
 ### Performance Reviews
-Stores performance evaluations.
+Stores employee performance ratings and reviews.
 
 ### Satisfaction Surveys
-Stores employee feedback responses.
+Stores employee feedback and survey responses.
 
 ### Churn Predictions
-Stores generated risk scores.
+Stores risk scores and prediction history.
 
 ### Retention Recommendations
-Stores suggested retention actions.
+Stores generated retention strategies.
 
 ### Alerts
-Stores system-generated notifications.
+Stores system-generated notifications and warnings.
 
 ---
 
-# 🚀 Installation & Setup
+# 🎓 Academic & Technical Significance
 
-### Clone Repository
+This project demonstrates practical implementation of:
 
-```bash
-git clone https://github.com/your-username/employee-churn-prediction-system.git
-```
+### Software Engineering
+- Full-Stack Application Development
+- Enterprise System Design
+- Clean Architecture Principles
+- Modular Development
 
-### Navigate to Project Directory
+### Database Systems
+- Relational Database Design
+- Entity Relationship Modeling
+- Data Integrity Management
 
-```bash
-cd employee-churn-prediction-system
-```
+### Security
+- Authentication & Authorization
+- JWT Security Implementation
+- Role-Based Access Control
 
-### Run Application
+### Analytics
+- Workforce Analytics
+- Business Intelligence Dashboards
+- Data Visualization Techniques
 
-```bash
-docker-compose up
-```
-
-### Frontend
-
-```bash
-npm install
-npm run dev
-```
-
-### Backend
-
-```bash
-mvn spring-boot:run
-```
-
----
-
-# 📂 Project Structure
-
-```text
-employee-churn-prediction-system/
-
-├── frontend/
-├── backend/
-├── database/
-├── docs/
-├── docker/
-├── screenshots/
-├── README.md
-└── docker-compose.yml
-```
+### Human Resource Technology
+- Employee Lifecycle Management
+- Attrition Analysis
+- Workforce Retention Strategies
 
 ---
 
 # 🔮 Future Enhancements
 
-- Machine Learning-Based Churn Prediction
-- AI-Powered Recommendation Engine
+The platform can be further enhanced through:
+
+- Machine Learning-Based Attrition Prediction
+- AI-Powered Retention Recommendations
 - Real-Time Notification Services
-- Email & SMS Alerts
-- Mobile Application Support
+- Email and SMS Alerts
+- Mobile Application Development
 - Employee Sentiment Analysis
-- Advanced Workforce Forecasting
-- Predictive HR Analytics
-
----
-
-# 🎓 Learning Outcomes
-
-This project demonstrates practical knowledge in:
-
-- Full-Stack Web Development
-- Enterprise Software Architecture
-- REST API Development
-- Authentication & Authorization
-- Database Design
-- HR Analytics
-- Data Visualization
-- Software Engineering Principles
-- Workforce Management Systems
+- Advanced Predictive Analytics
+- Workforce Forecasting Models
 
 ---
 
 # 👩‍💻 Author
 
 ### Saranya
-Student, Cambridge Institute of Technology
 
-Passionate about Software Engineering, Full-Stack Development, Data Analytics, and Building Real-World Solutions.
+Cambridge Institute of Technology
+
+Focused on building scalable software solutions, enterprise applications, and data-driven systems that solve real-world business problems.
 
 ---
 
 <div align="center">
 
-### ⭐ If you found this project useful, consider starring the repository.
+### ⭐ Building Smarter Workplaces Through Predictive HR Analytics
 
-**Building Smarter Workplaces Through Data-Driven HR Analytics**
+**Predict • Analyze • Retain**
 
-</div># Here are your Instructions
+</div>
