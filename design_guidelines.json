@@ -1,0 +1,126 @@
+{
+  "project_name": "Employee Churn Prediction & Retention System",
+  "theme_and_archetype": {
+    "theme_mode": "Light with Dark Mode toggle",
+    "archetype": "Archetype 4 (Swiss & High-Contrast)",
+    "description": "Authority, clarity, function-first. The dashboard acts as a 'Control Room' for HR data with strong semantic highlights for churn risks."
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "import_url": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap",
+      "weights": ["400", "600", "700", "900"],
+      "usage": "Use tight tracking (tracking-tight) for large sizes. Max text-5xl for major headers. NEVER use Inter for headings."
+    },
+    "body": {
+      "family": "'IBM Plex Sans', sans-serif",
+      "import_url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap",
+      "weights": ["400", "500", "600"],
+      "usage": "Use for all data tables, inputs, labels, and analytical text."
+    },
+    "mono": {
+      "family": "'JetBrains Mono', monospace",
+      "import_url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "usage": "Use for IDs, specific data metrics, or technical readouts."
+    }
+  },
+  "color_palette": {
+    "light_mode": {
+      "background": "#F8F9FA",
+      "surface": "#FFFFFF",
+      "text_primary": "#0A0A0A",
+      "text_secondary": "#52525B",
+      "border": "#E4E4E7",
+      "primary": "#0A0A0A",
+      "primary_foreground": "#FFFFFF"
+    },
+    "dark_mode": {
+      "background": "#0A0A0A",
+      "surface": "#141414",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#A1A1AA",
+      "border": "#27272A",
+      "primary": "#FFFFFF",
+      "primary_foreground": "#0A0A0A"
+    },
+    "semantic": {
+      "risk_high": "#FF3B30",
+      "risk_high_bg": "rgba(255, 59, 48, 0.1)",
+      "risk_high_border": "rgba(255, 59, 48, 0.4)",
+      "risk_medium": "#FFCC00",
+      "risk_medium_bg": "rgba(255, 204, 0, 0.1)",
+      "risk_medium_border": "rgba(255, 204, 0, 0.4)",
+      "risk_low": "#34C759",
+      "risk_low_bg": "rgba(52, 199, 89, 0.1)",
+      "risk_low_border": "rgba(52, 199, 89, 0.4)",
+      "info": "#007AFF"
+    }
+  },
+  "layout_and_grids": {
+    "global": {
+      "padding": "p-6 md:p-8",
+      "max_width": "max-w-[1600px] mx-auto",
+      "sidebar_width": "w-64"
+    },
+    "dashboard_grid": {
+      "pattern": "The 'Control Room' Grid",
+      "base": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6",
+      "kpi_cards": "col-span-1",
+      "main_chart": "col-span-1 md:col-span-2 lg:col-span-3 row-span-2",
+      "alerts_feed": "col-span-1 lg:col-span-1 row-span-2"
+    }
+  },
+  "component_strategies": {
+    "cards": "Cardless or strictly 1px border with no shadow (border-border/40). Radius max `rounded-md` (6px). Use progressive disclosure logic.",
+    "kpi_widgets": "Top-left alignment 'North Star' layout. Massive metric number, small subtitle, subtle trend indicator in semantic color.",
+    "buttons": "Flat design. Primary: bg-primary text-primary-foreground. Secondary: border border-border bg-transparent hover:bg-secondary.",
+    "tables": "Dense. Use `IBM Plex Sans`. Left-align text, right-align numbers. Sticky headers for long lists. Use standard pagination components.",
+    "badges": "Pill-shaped (rounded-full) for Churn Risk. High Risk = Red bg/text, Med = Yellow, Low = Green. High-contrast border.",
+    "forms": "Use Shadcn Form. Labels must be bold. Input fields need clear focus rings (`focus-visible:ring-primary focus-visible:ring-offset-2`).",
+    "charts": "Recharts. Use semantic colors directly for the data series (e.g., High Risk bar = Red). Remove heavy grid lines, use dashed subtle lines for axes.",
+    "sidebar": "Fixed, full-height. Must contain clear active states (bg-secondary/50) and bottom anchor for Dark Mode toggle and User Profile.",
+    "recommendations_panel": "Use progressive disclosure. Show 'Retention Recommendations' as action-oriented text with distinct list styling."
+  },
+  "interactions_and_motion": {
+    "hover_states": "All clickable elements must change background or border explicitly. Do not rely on opacity fading. e.g., hover:bg-slate-100 hover:text-black",
+    "transitions": "Fast and crisp. `transition-all duration-200 ease-in-out`.",
+    "alerts": "High Risk alerts should pulse subtly or use a harsh red border to command attention.",
+    "accessibility": "Must respect prefers-reduced-motion."
+  },
+  "icons": {
+    "library": "lucide-react",
+    "usage": "Use for sidebar nav, action buttons, alert indicators. Keep stroke width consistent (1.5 or 2)."
+  },
+  "media_urls": {
+    "login_background": {
+      "url": "https://images.unsplash.com/photo-1531972111231-7482a960e109?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBhcmNoaXRlY3R1cmUlMjBhYnN0cmFjdHxlbnwwfHx8fDE3ODE0MjA4MDd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract architectural glass structure, use for login page split-screen background with `mix-blend-overlay` or subtle opacity."
+    },
+    "employee_avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjb3Jwb3JhdGUlMjBoZWFkc2hvdHxlbnwwfHx8fDE3ODE0MjA4MDd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional smiling woman, use for seed data."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1600878459138-e1123b37cb30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBjb3Jwb3JhdGUlMjBoZWFkc2hvdHxlbnwwfHx8fDE3ODE0MjA4MDd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Man in suit, use for seed data."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1685760259914-ee8d2c92d2e0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBjb3Jwb3JhdGUlMjBoZWFkc2hvdHxlbnwwfHx8fDE3ODE0MjA4MDd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Woman with arms crossed, use for seed data."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. Setup Tailwind CSS to include the color_palette mapped to standard variables (e.g., bg-background, text-primary). Add dark mode via standard 'class' strategy.",
+    "2. Inject Google Fonts (Outfit, IBM Plex Sans, JetBrains Mono) into index.css and extend the Tailwind font-family theme accordingly.",
+    "3. Build the 'Control Room' grid layout for the Admin Dashboard exactly as specified: KPI cards col-span-1, main charts spanning multiple cols/rows, tight gaps (gap-4 or gap-6).",
+    "4. Use Semantic Colors directly in Recharts for Churn Risk visualizations (Red = High Risk, Yellow = Medium, Green = Low).",
+    "5. Aggressively remove 'card' drop-shadows from Shadcn components. Replace them with 1px borders (border-border/40) for a highly technical, Swiss aesthetic. Do not use border-radius larger than 6px.",
+    "6. Build a robust Sidebar Navigation layout with clear active states and a bottom section for user profile/theme toggle.",
+    "7. Construct the Employee Profile page using a dense 'Bento' style grid to display Attendance, Leaves, Performance Reviews, and Risk Score all in one view.",
+    "8. Implement an Alerts System feed specifically highlighting 'High Risk' indicators.",
+    "9. Every interactive element, nav link, and key text component MUST have a `data-testid` attribute (e.g., `data-testid='login-button'`, `data-testid='employee-risk-badge'`, `data-testid='sidebar-nav-dashboard'`).",
+    "10. Write components using .js or .jsx (not TypeScript), conforming to standard React patterns."
+  ]
+}
